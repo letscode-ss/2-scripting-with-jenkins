@@ -19,8 +19,8 @@ pipeline {
     post {
         always {
             sh """
-                echo INFO: Workspace cleanup
-                rm -rf ${WORKSPACE}/
+                echo INFO Workspace cleanup
+                rm -rf ${WORKSPACE}
             """
         }
     }
