@@ -1,9 +1,14 @@
 pipeline {
     agent { label 'master' }
     stages {
-        stage('build') {
+        stage("seed") { 
             steps {
-                sh 'echo help'
+                //prepare maven agent
+                script { 
+                    container("jnlp") { 
+                        jobDsl targets: 'seed.groovy'
+                    }                    
+                }
             }
         }
     }
