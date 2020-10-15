@@ -4,7 +4,7 @@ pipeline {
         stage("gradle build") { 
             steps {
                 script { 
-                    sh "gradle build"
+                    sh "cd web-hello-world && gradle build"
                 }
             }
         }
