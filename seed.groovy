@@ -43,5 +43,5 @@ folder("${subFolder}") {
 
 jobMap.each { job ->
     //Create nexus job
-    jenkinsJob( "${subFolder}/$job.key","$job.value","github_personal","Jenkinsfile")
+    jenkinsJob( "${subFolder}/$job.key","$job.value","github_personal","web-hello-world/Jenkinsfile")
 }
