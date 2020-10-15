@@ -2,7 +2,7 @@ import jenkins.model.Jenkins
 import hudson.*
 
 
-def jenkinsJob(repoUrl,credID,jenkinsFile) {
+def jenkinsJob(jobName,repoUrl,credID,jenkinsFile) {
     pipelineJob(jobName).with {
         parameters {
                 stringParam('workSpaceSize', '10', 'In Mbs')
