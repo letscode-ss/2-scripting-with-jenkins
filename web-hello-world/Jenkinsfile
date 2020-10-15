@@ -19,7 +19,7 @@ pipeline {
     post {
         always {
             echo "doing cleanup"
-            sh "echo rm -rf ${workspaces}"
+            sh "set && echo rm -rf ${WORKSPACE}"
         }
     }
 }
