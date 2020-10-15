@@ -20,7 +20,7 @@ pipeline {
         always {
             sh """
                 echo INFO Workspace cleanup
-                rm -rf ${WORKSPACE}
+                rm -rf ${WORKSPACE}/*
             """
         }
     }
