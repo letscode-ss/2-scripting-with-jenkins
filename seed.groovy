@@ -26,19 +26,16 @@ def jenkinsJob(jobName,repoUrl,credID,jenkinsFile) {
 def jobMap = ['job-1': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
             'job-2': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
             'job-3': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
-            'job-4': "https://github.com/configuration-org/2-scripting-with-jenkins.git"]
-def rootFolder = "adhoc"
-def subFolder = "${rootFolder}/2-scripting-with-jenkins"
+            'job-4': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
+            'job-5': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
+            'job-6': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
+            'job-7': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
+            'job-8': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
+            'job-9': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
+            'job-10': "https://github.com/configuration-org/2-scripting-with-jenkins.git"]
 
-folder("${rootFolder}") {
-    description('adhoc folder')
-}
-
-folder("${subFolder}") {
-    description('adhoc folder')
-}
 
 jobMap.each { job ->
     //Create nexus job
-    jenkinsJob( "${subFolder}/$job.key","$job.value","github_personal","web-hello-world/Jenkinsfile")
+    jenkinsJob( "$job.key","$job.value","github_personal","web-hello-world/Jenkinsfile")
 }
