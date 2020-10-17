@@ -20,6 +20,9 @@ for (node in Jenkins.instance.nodes) {
       if (roundedSize < 200) {
       try {
         computer.setTemporarilyOffline(true, new hudson.slaves.OfflineCause.ByCLI("disk cleanup"))
+        jenkins.model.Jenkins.instance.getAllItems(jenkins.model.ParameterizedJobMixIn.ParameterizedJob.class).findAll{it -> it.disabled}.each {it ->
+            println it.fullName;
+        }
         for (item in Jenkins.instance.items) {
             jobName = item.getFullDisplayName()
             println("=== type" + item.getClass())
