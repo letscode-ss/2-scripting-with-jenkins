@@ -28,7 +28,7 @@ pipeline {
     post {
         cleanup{
             script {
-                load 'cleanup-workspaces.groovy'                
+                load 'web-hello-world/cleanup-workspaces.groovy'                
             }
         }
     }
