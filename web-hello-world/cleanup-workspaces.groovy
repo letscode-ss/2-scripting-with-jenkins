@@ -23,7 +23,7 @@ for (node in Jenkins.instance.nodes) {
         for (item in Jenkins.instance.items) {
             jobName = item.getFullDisplayName()
             com.cloudbees.hudson.plugins.folder.computed
-            println("=== type",item.getClass())
+            println("=== type" + item.getClass())
             if (item instanceof com.cloudbees.hudson.plugins.folder.Folder) {
                 println(".. job " + jobName + " is currently running, skipped")
                 continue
