@@ -1,5 +1,3 @@
-// Check if a slave has < 10 GB of free space, wipe out workspaces if it does
-
 import hudson.model.*;
 import hudson.util.*;
 import jenkins.model.*;
@@ -16,14 +14,13 @@ for (node in Jenkins.instance.nodes) {
     roundedSize = size / (1024 * 1024 * 1024) as int
     
     println("node: " + node.getDisplayName() + ", free space: " + roundedSize + "GB")
-    //if (roundedSize < 10) {
-      if (roundedSize < 200) {
+    if (roundedSize < 10) {
       try {
         computer.setTemporarilyOffline(true, new hudson.slaves.OfflineCause.ByCLI("disk cleanup"))
         for (item in Jenkins.instance.items) {
             jobName = item.getFullDisplayName()
             if (item instanceof com.cloudbees.hudson.plugins.folder.Folder || item instanceof jenkins.branch.OrganizationFolder ) {
-                println(".. job " + jobName + " is currently running, skipped")
+                println("cleanup: job " + jobName + " is currently running, skipped")
                 continue
             }
 
@@ -31,18 +28,18 @@ for (node in Jenkins.instance.nodes) {
 
             workspacePath = node.getWorkspaceFor(item)
             if (workspacePath == null) {
-                println(".... could not get workspace path")
+                println("cleanup: could not get workspace path")
                 continue
             }
 
-            println(".... workspace = " + workspacePath)
+            println("cleanup: workspace = " + workspacePath)
 
             pathAsString = workspacePath.getRemote()
             if (workspacePath.exists()) {
                 workspacePath.deleteRecursive()
-                println(".... deleted from location " + pathAsString)
+                println("cleanup: deleted from location " + pathAsString)
             } else {
-                println(".... nothing to delete at " + pathAsString)
+                println("cleanup: nothing to delete at " + pathAsString)
             }
         }
       } finally {
