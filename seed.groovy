@@ -4,9 +4,6 @@ import hudson.*
 
 def jenkinsJob(jobName,repoUrl,credID,jenkinsFile) {
     pipelineJob(jobName).with {
-        parameters {
-                stringParam('workSpaceSize', '10', 'In Mbs')
-        }
         logRotator(-1, 10, -1, -1) 
         definition {
             cpsScm {
