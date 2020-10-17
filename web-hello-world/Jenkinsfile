@@ -8,7 +8,7 @@ pipeline {
                 }
             }
         }
-        stage("dd command") { 
+        stage("Generating 100 MB") { 
             steps {
                 script { 
                     sh "dd if=/dev/zero of=testfile bs=1024 count=102400"
@@ -16,15 +16,6 @@ pipeline {
             }
         }
     }
-    /*
-    post {
-        always {
-            sh """
-                echo INFO Workspace cleanup
-                rm -rf ${WORKSPACE}
-            """
-        }
-    }*/
     post {
         cleanup{
             script {
