@@ -13,7 +13,8 @@ for (node in Jenkins.instance.nodes) {
 
     rootPath = node.getRootPath()
     size = DiskSpaceMonitor.DESCRIPTOR.get(computer).size
-    roundedSize = size / (1024 * 1024 * 1024) as int
+    //roundedSize = size / (1024 * 1024 * 1024) as int
+    roundedSize = size / (1024) as int
 
     println("node: " + node.getDisplayName() + ", free space: " + roundedSize + "GB")
     if (roundedSize < 10) {
