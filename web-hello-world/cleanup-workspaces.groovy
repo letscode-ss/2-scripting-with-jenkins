@@ -20,12 +20,8 @@ for (node in Jenkins.instance.nodes) {
       if (roundedSize < 200) {
       try {
         computer.setTemporarilyOffline(true, new hudson.slaves.OfflineCause.ByCLI("disk cleanup"))
-        jenkins.model.Jenkins.instance.getAllItems(jenkins.model.ParameterizedJobMixIn.ParameterizedJob.class).findAll {it ->
-            println it.fullName;
-        }
         for (item in Jenkins.instance.items) {
             jobName = item.getFullDisplayName()
-            println("=== type" + item.getClass())
             if (item instanceof com.cloudbees.hudson.plugins.folder.Folder || item instanceof jenkins.branch.OrganizationFolder ) {
                 println(".. job " + jobName + " is currently running, skipped")
                 continue
@@ -40,12 +36,6 @@ for (node in Jenkins.instance.nodes) {
             }
 
             println(".... workspace = " + workspacePath)
-
-            /*customWorkspace = item.getCustomWorkspace()
-            if (customWorkspace != null) {
-                workspacePath = node.getRootPath().child(customWorkspace)
-                println(".... custom workspace = " + workspacePath)
-            }*/
 
             pathAsString = workspacePath.getRemote()
             if (workspacePath.exists()) {
