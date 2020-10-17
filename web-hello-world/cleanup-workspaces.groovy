@@ -18,6 +18,7 @@ for (node in Jenkins.instance.nodes) {
     println("node: " + node.getDisplayName() + ", free space: " + roundedSize + "GB")
     //if (roundedSize < 10) {
       if (roundedSize < 200) {
+      try {
         computer.setTemporarilyOffline(true, new hudson.slaves.OfflineCause.ByCLI("disk cleanup"))
         for (item in Jenkins.instance.items) {
             jobName = item.getFullDisplayName()
@@ -51,7 +52,8 @@ for (node in Jenkins.instance.nodes) {
                 println(".... nothing to delete at " + pathAsString)
             }
         }
-
+      } finally {
         computer.setTemporarilyOffline(false, null)
+      }
     }
 }
