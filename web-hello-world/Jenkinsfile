@@ -18,11 +18,11 @@ pipeline {
     }
     post {
         always {
-            //sh """
-            //    echo INFO Workspace cleanup
-            //    rm -rf ${WORKSPACE}/*
-            //"""
-            cleanWs()
+            sh """
+                echo INFO Workspace cleanup
+                rm -rf ${WORKSPACE}
+            """
+            //cleanWs()
         }
     }
 }
