@@ -16,13 +16,18 @@ pipeline {
             }
         }
     }
+    /*
     post {
         always {
             sh """
                 echo INFO Workspace cleanup
                 rm -rf ${WORKSPACE}
             """
-            //cleanWs()
+        }
+    }*/
+    post {
+        always {
+            deleteDir() /* clean up our workspace */
         }
     }
 }
