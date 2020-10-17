@@ -49,7 +49,7 @@ for (node in Jenkins.instance.nodes) {
 
             pathAsString = workspacePath.getRemote()
             if (workspacePath.exists()) {
-              //  workspacePath.deleteRecursive()
+                workspacePath.deleteRecursive()
                 println(".... deleted from location " + pathAsString)
             } else {
                 println(".... nothing to delete at " + pathAsString)
