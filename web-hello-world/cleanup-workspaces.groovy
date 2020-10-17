@@ -7,7 +7,6 @@ import hudson.FilePath.FileCallable;
 import hudson.slaves.OfflineCause;
 import hudson.node_monitors.*;
 
-println("node: ")
 for (node in Jenkins.instance.nodes) {
     computer = node.toComputer()
     if (computer.getChannel() == null) continue
