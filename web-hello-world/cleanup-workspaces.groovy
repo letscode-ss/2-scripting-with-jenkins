@@ -41,11 +41,11 @@ for (node in Jenkins.instance.nodes) {
 
             println(".... workspace = " + workspacePath)
 
-            customWorkspace = item.getCustomWorkspace()
+            /*customWorkspace = item.getCustomWorkspace()
             if (customWorkspace != null) {
                 workspacePath = node.getRootPath().child(customWorkspace)
                 println(".... custom workspace = " + workspacePath)
-            }
+            }*/
 
             pathAsString = workspacePath.getRemote()
             if (workspacePath.exists()) {
