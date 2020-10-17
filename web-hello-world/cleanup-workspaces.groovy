@@ -22,7 +22,7 @@ for (node in Jenkins.instance.nodes) {
         for (item in Jenkins.instance.items) {
             jobName = item.getFullDisplayName()
 
-            if (item.isBuilding()) {
+            if (item instanceof com.cloudbees.hudson.plugins.folder.Folder) {
                 println(".. job " + jobName + " is currently running, skipped")
                 continue
             }
