@@ -2,8 +2,8 @@
 
 In this repo I jenkins pipeline which perform workstation cleenup post build execution.
 
-![To generate jobs for testing](Jenkinsfile)
+[Jenkinsfile To generate jobs for testing](Jenkinsfile)<br/>
 
-![To run the pipeline](web-hello-world/Jenkinsfile)
+[web-hello-world/Jenkinsfile To run the pipeline](web-hello-world/Jenkinsfile)<br/>
 
-![Workspace cleanup script](web-hello-world/cleanup-workspaces.groovy)
+[web-hello-world/cleanup-workspaces.groovy Workspace cleanup script](web-hello-world/cleanup-workspaces.groovy)<br/>
