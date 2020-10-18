@@ -23,16 +23,16 @@ def jenkinsJob(jobName,repoUrl,credID,jenkinsFile) {
 }
 
 
-def jobMap = ['job-1': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
-            'job-2': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
-            'job-3': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
-            'job-4': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
-            'job-5': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
-            'job-6': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
-            'job-7': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
-            'job-8': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
-            'job-9': "https://github.com/configuration-org/2-scripting-with-jenkins.git", 
-            'job-10': "https://github.com/configuration-org/2-scripting-with-jenkins.git"]
+def jobMap = ['job-1': "https://github.com/letscode-ss/2-scripting-with-jenkins.git", 
+            'job-2': "https://github.com/letscode-ss/2-scripting-with-jenkins.git", 
+            'job-3': "https://github.com/letscode-ss/2-scripting-with-jenkins.git", 
+            'job-4': "https://github.com/letscode-ss/2-scripting-with-jenkins.git", 
+            'job-5': "https://github.com/letscode-ss/2-scripting-with-jenkins.git", 
+            'job-6': "https://github.com/letscode-ss/2-scripting-with-jenkins.git", 
+            'job-7': "https://github.com/letscode-ss/2-scripting-with-jenkins.git", 
+            'job-8': "https://github.com/letscode-ss/2-scripting-with-jenkins.git", 
+            'job-9': "https://github.com/letscode-ss/2-scripting-with-jenkins.git", 
+            'job-10': "https://github.com/letscode-ss/2-scripting-with-jenkins.git"]
 
 
 jobMap.each { job ->

@@ -18,18 +18,18 @@ Running on node-01 in /Users/shisharm18/jenkins_docker_home/node-01/workspace/jo
 [Pipeline] checkout
 using credential github_personal
 Cloning the remote Git repository
-Cloning repository https://github.com/configuration-org/2-scripting-with-jenkins.git
+Cloning repository https://github.com/letscode-ss/2-scripting-with-jenkins.git
  > git init /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-1 # timeout=10
-Fetching upstream changes from https://github.com/configuration-org/2-scripting-with-jenkins.git
+Fetching upstream changes from https://github.com/letscode-ss/2-scripting-with-jenkins.git
  > git --version # timeout=10
 using GIT_ASKPASS to set credentials 
- > git fetch --tags --progress -- https://github.com/configuration-org/2-scripting-with-jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
- > git config remote.origin.url https://github.com/configuration-org/2-scripting-with-jenkins.git # timeout=10
+ > git fetch --tags --progress -- https://github.com/letscode-ss/2-scripting-with-jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/letscode-ss/2-scripting-with-jenkins.git # timeout=10
  > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
- > git config remote.origin.url https://github.com/configuration-org/2-scripting-with-jenkins.git # timeout=10
-Fetching upstream changes from https://github.com/configuration-org/2-scripting-with-jenkins.git
+ > git config remote.origin.url https://github.com/letscode-ss/2-scripting-with-jenkins.git # timeout=10
+Fetching upstream changes from https://github.com/letscode-ss/2-scripting-with-jenkins.git
 using GIT_ASKPASS to set credentials 
- > git fetch --tags --progress -- https://github.com/configuration-org/2-scripting-with-jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git fetch --tags --progress -- https://github.com/letscode-ss/2-scripting-with-jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
 Checking out Revision 1b5f6ef6d8239166d2c69b5d90430c770c4fcd8b (origin/master)
 Commit message: "updating"
 [Pipeline] }
