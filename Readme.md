@@ -11,7 +11,7 @@ In this repo I jenkins pipeline which perform workstation cleenup post build exe
 
 ## Pipeline logs
 ```
-Running on node-01 in /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-1
+Running on node-01 in /Users/testusr/jenkins_docker_home/node-01/workspace/job-1
 [Pipeline] {
 [Pipeline] stage
 [Pipeline] { (Declarative: Checkout SCM)
@@ -19,7 +19,7 @@ Running on node-01 in /Users/shisharm18/jenkins_docker_home/node-01/workspace/jo
 using credential github_personal
 Cloning the remote Git repository
 Cloning repository https://github.com/letscode-ss/2-scripting-with-jenkins.git
- > git init /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-1 # timeout=10
+ > git init /Users/testusr/jenkins_docker_home/node-01/workspace/job-1 # timeout=10
 Fetching upstream changes from https://github.com/letscode-ss/2-scripting-with-jenkins.git
  > git --version # timeout=10
 using GIT_ASKPASS to set credentials 
@@ -95,77 +95,77 @@ node: node-01, free space: 187GB
 [Pipeline] echo
 .. wiping out workspaces of job erregereger
 [Pipeline] echo
-.... workspace = /Users/shisharm18/jenkins_docker_home/node-01/workspace/erregereger
+.... workspace = /Users/testusr/jenkins_docker_home/node-01/workspace/erregereger
 [Pipeline] echo
-.... nothing to delete at /Users/shisharm18/jenkins_docker_home/node-01/workspace/erregereger
+.... nothing to delete at /Users/testusr/jenkins_docker_home/node-01/workspace/erregereger
 [Pipeline] echo
 .. wiping out workspaces of job job-1
 [Pipeline] echo
-.... workspace = /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-1
+.... workspace = /Users/testusr/jenkins_docker_home/node-01/workspace/job-1
 [Pipeline] echo
-.... deleted from location /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-1
+.... deleted from location /Users/testusr/jenkins_docker_home/node-01/workspace/job-1
 [Pipeline] echo
 .. wiping out workspaces of job job-10
 [Pipeline] echo
-.... workspace = /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-10
+.... workspace = /Users/testusr/jenkins_docker_home/node-01/workspace/job-10
 [Pipeline] echo
-.... nothing to delete at /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-10
+.... nothing to delete at /Users/testusr/jenkins_docker_home/node-01/workspace/job-10
 [Pipeline] echo
 .. wiping out workspaces of job job-2
 [Pipeline] echo
-.... workspace = /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-2
+.... workspace = /Users/testusr/jenkins_docker_home/node-01/workspace/job-2
 [Pipeline] echo
-.... nothing to delete at /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-2
+.... nothing to delete at /Users/testusr/jenkins_docker_home/node-01/workspace/job-2
 [Pipeline] echo
 .. wiping out workspaces of job job-3
 [Pipeline] echo
-.... workspace = /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-3
+.... workspace = /Users/testusr/jenkins_docker_home/node-01/workspace/job-3
 [Pipeline] echo
-.... nothing to delete at /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-3
+.... nothing to delete at /Users/testusr/jenkins_docker_home/node-01/workspace/job-3
 [Pipeline] echo
 .. wiping out workspaces of job job-4
 [Pipeline] echo
-.... workspace = /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-4
+.... workspace = /Users/testusr/jenkins_docker_home/node-01/workspace/job-4
 [Pipeline] echo
-.... nothing to delete at /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-4
+.... nothing to delete at /Users/testusr/jenkins_docker_home/node-01/workspace/job-4
 [Pipeline] echo
 .. wiping out workspaces of job job-5
 [Pipeline] echo
-.... workspace = /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-5
+.... workspace = /Users/testusr/jenkins_docker_home/node-01/workspace/job-5
 [Pipeline] echo
-.... nothing to delete at /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-5
+.... nothing to delete at /Users/testusr/jenkins_docker_home/node-01/workspace/job-5
 [Pipeline] echo
 .. wiping out workspaces of job job-6
 [Pipeline] echo
-.... workspace = /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-6
+.... workspace = /Users/testusr/jenkins_docker_home/node-01/workspace/job-6
 [Pipeline] echo
-.... nothing to delete at /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-6
+.... nothing to delete at /Users/testusr/jenkins_docker_home/node-01/workspace/job-6
 [Pipeline] echo
 .. wiping out workspaces of job job-7
 [Pipeline] echo
-.... workspace = /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-7
+.... workspace = /Users/testusr/jenkins_docker_home/node-01/workspace/job-7
 [Pipeline] echo
-.... nothing to delete at /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-7
+.... nothing to delete at /Users/testusr/jenkins_docker_home/node-01/workspace/job-7
 [Pipeline] echo
 .. wiping out workspaces of job job-8
 [Pipeline] echo
-.... workspace = /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-8
+.... workspace = /Users/testusr/jenkins_docker_home/node-01/workspace/job-8
 [Pipeline] echo
-.... nothing to delete at /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-8
+.... nothing to delete at /Users/testusr/jenkins_docker_home/node-01/workspace/job-8
 [Pipeline] echo
 .. wiping out workspaces of job job-9
 [Pipeline] echo
-.... workspace = /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-9
+.... workspace = /Users/testusr/jenkins_docker_home/node-01/workspace/job-9
 [Pipeline] echo
-.... nothing to delete at /Users/shisharm18/jenkins_docker_home/node-01/workspace/job-9
+.... nothing to delete at /Users/testusr/jenkins_docker_home/node-01/workspace/job-9
 [Pipeline] echo
 .. job king-test is currently running, skipped
 [Pipeline] echo
 .. wiping out workspaces of job lighthouse-scan
 [Pipeline] echo
-.... workspace = /Users/shisharm18/jenkins_docker_home/node-01/workspace/lighthouse-scan
+.... workspace = /Users/testusr/jenkins_docker_home/node-01/workspace/lighthouse-scan
 [Pipeline] echo
-.... nothing to delete at /Users/shisharm18/jenkins_docker_home/node-01/workspace/lighthouse-scan
+.... nothing to delete at /Users/testusr/jenkins_docker_home/node-01/workspace/lighthouse-scan
 [Pipeline] }
 [Pipeline] // load
 [Pipeline] }
