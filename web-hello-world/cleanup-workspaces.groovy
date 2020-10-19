@@ -50,6 +50,7 @@ for (node in Jenkins.instance.nodes) {
 }
 */
 
-def cleanup(node_name) {
+def cleanup(String node_name) {
     println("Yes node name is ${node_name}")
 }
+
