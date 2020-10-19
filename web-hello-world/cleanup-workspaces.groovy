@@ -5,6 +5,7 @@ import hudson.FilePath.FileCallable;
 import hudson.slaves.OfflineCause;
 import hudson.node_monitors.*;
 
+/*
 for (node in Jenkins.instance.nodes) {
     computer = node.toComputer()
     if (computer.getChannel() == null) continue
@@ -46,4 +47,9 @@ for (node in Jenkins.instance.nodes) {
         computer.setTemporarilyOffline(false, null)
       }
     }
+}
+*/
+
+def cleanup(node_name) {
+    println("Yes node name is ${node_name}")
 }

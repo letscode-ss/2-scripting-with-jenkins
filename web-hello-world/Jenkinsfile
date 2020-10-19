@@ -1,5 +1,6 @@
+def node_name = "agent"
 pipeline {
-    agent { label 'agent' }
+    agent { label node_name }
     stages {
         stage("gradle build") { 
             steps {
@@ -19,7 +20,9 @@ pipeline {
     post {
         cleanup{
             script {
-                load 'web-hello-world/cleanup-workspaces.groovy'                
+                def script = load 'web-hello-world/cleanup-workspaces.groovy'
+                script.cleanup(node_name)
+                load ''                
             }
         }
     }
