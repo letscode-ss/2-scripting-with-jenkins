@@ -22,7 +22,6 @@ pipeline {
             script {
                 def script = load 'web-hello-world/cleanup-workspaces.groovy'
                 script.cleanup(node_name)
-                load ''                
             }
         }
     }
