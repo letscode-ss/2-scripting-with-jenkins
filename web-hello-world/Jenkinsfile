@@ -9,7 +9,7 @@ pipeline {
                 }
             }
         }
-        stage("Generating 100 MB") { 
+        stage("Generating 100 MB instead of 10GB") { 
             steps {
                 script { 
                     sh "dd if=/dev/zero of=testfile bs=1024 count=102400"
